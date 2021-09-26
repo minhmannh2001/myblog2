@@ -9,8 +9,13 @@
 }
 
 @font-face {
-    font-family: PTSansNarrow-Regular;
-    src: url("fonts/PTSansNarrow-Regular.ttf");
+    font-family: RobotoSlab-Light;
+    src: url("fonts/RobotoSlab-Light.ttf");
+}
+
+@font-face {
+    font-family: ArimaMadurai-Medium;
+    src: url("fonts/ArimaMadurai-Medium.ttf");
 }
 
 * {
@@ -20,7 +25,7 @@
 }
 
 body {
-    background-color: #fafbfb;
+    background-color: #dce2e2;
 }
 
 .container {
@@ -35,7 +40,7 @@ body {
 }
 
 .nav-item {
-    font-family: PTSansNarrow-Regular;
+    font-family: ArimaMadurai-Medium;
 }
 
 .blog-logo {
@@ -66,7 +71,7 @@ body {
     border: none;
     font-size: 22px;
     background-color: transparent;   
-    font-family: PTSansNarrow-Regular;
+    font-family: ArimaMadurai-Medium;
 }
 
 #input-container input::placeholder {
@@ -334,17 +339,21 @@ body {
     box-shadow: 0 2px 7px rgb(145 145 145 / 35%);
 }
 
+.book:hover {
+    box-shadow: 0 4px 7px rgb(0 0 0 / 35%);
+    transition: all .3s ease-in-out;
+}
+
 .blog-category {
     font-size: 16px;
     font-family: RobotoSlab-Medium;
+}
+
+.book-category-link {
     color: #6977c8;
 }
 
-.blog-category-link {
-    color: #6977c8;
-}
-
-.blog-category-link:hover {
+.book-category-link:hover {
     text-decoration: none;
     color: #6977c8;
 }
@@ -398,6 +407,22 @@ body {
     height: 32vh;
 }
 
+.book4-img {
+    background-image: url("sweet-love.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 32vh;
+}
+
+.book5-img {
+    background-image: url("a-thousand-letters.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 32vh;
+}
+
 .all-book-reviews-btn {
     background-color: transparent;
     font-size: 14px;
@@ -413,4 +438,222 @@ body {
     cursor: pointer;
     border-color: #4b4b4b;
     transition: all 0.4s ease;
+}
+
+.blogs-section-heading {
+    font-family: Abril-Fatface-Regular;
+}
+
+.blog-item {
+    margin-bottom: 32px;
+}
+
+.blog-item-wrapper {
+    box-shadow: 0 2px 7px rgb(145 145 145 / 35%);
+    border-radius: 5px;
+}
+
+.blog-item-wrapper:hover {
+    box-shadow: 0 4px 7px rgb(0 0 0 / 35%);
+    transition: all .3s ease-in-out;
+}
+
+.blog-information-area {
+    min-height: 24vh;
+}
+
+.blog-category-link {
+    text-transform: uppercase;
+}
+
+.blog-category-link:hover {
+    text-decoration: none;
+}
+
+.blog-food-category-link {
+    color: #226f61;
+}
+
+.blog-health-category-link {
+    color: #d7828e;
+}
+
+.blog-health-category-link:hover {
+    color: #d7828e;
+}
+
+.blog-travel-category-link {
+    color: #5d8bd9;
+}
+
+.blog-title-link {
+    color: #222222;
+    text-transform: capitalize;
+    font-family: RobotoSlab-Medium;
+    font-size: 22px;
+}
+
+.blog-title-link:hover {
+    color: #222222;
+    text-decoration: none;
+}
+
+.blog-author-link {
+    color: #767676;
+    font-family: RobotoSlab-Medium;
+}
+
+.blog-author-link:hover {
+    color: #767676;
+    text-decoration: none;
+}
+
+.blog-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 38vh;
+    margin: 0 -8px 0 -8px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.blog1-img {
+    background-image: url("coffee.jpg");
+}
+
+.blog2-img {
+    background-image: url("young-woman-sitting-on-a-park-bench-after-a-workout.jpg");
+}
+
+.blog3-img {
+    background-image: url("woman-sitting-in-window-reading-book.jpg");
+}
+
+.blog4-img {
+    background-image: url("IMG_9807Edit-1024x576.jpg");
+}
+
+.blog5-img {
+    background-image: url("Pai-Thailand.png");
+}
+
+.blog6-img {
+    background-image: url("Thuy-si.png");
+}
+
+.see-more-blogs-btn {
+    border-radius: 40px;
+    font-family: RobotoSlab-Medium;
+    font-size: 13px;
+    padding: 13px 34px 12px;
+    color: white;
+    background-color: #b54b09;
+    border-color: #b54b09;
+}
+
+.see-more-blogs-btn:hover {
+    text-decoration: none;
+    color: white;
+    transition: all .25s ease-in-out;
+    background-color: rgba(181,75,9,.8);
+    border-color: rgba(181,75,9,.8);
+}
+
+.latest-blog-item-wrapper {
+    border-radius: 5px;
+    box-shadow: 0 2px 7px rgb(145 145 145 / 35%);
+}
+
+.latest-blog-information-area {
+    min-height: 28vh;
+}
+
+.latest-blog-title-link {
+    font-family: RobotoSlab-Medium;
+    font-size: 16px;
+    color: #222222;
+    text-transform: capitalize;
+}
+
+.latest-blog-title-link:hover {
+    text-decoration: none;
+    color: #222222;
+}
+
+.latest-blog-author-link {
+    font-family: RobotoSlab-Medium;
+    font-size: 14px;
+    color: #767676;
+}
+
+.latest-blog-author-link:hover {
+    font-family: RobotoSlab-Medium;
+    color: #767676;
+    text-decoration: none;
+}
+
+.latest-blog-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 38vh;
+    margin: 0 -8px 0 -8px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.latest-blog1-img {
+    background-image: url("almond-butter-vs-peanut-butter.jpg");
+}
+
+.latest-blog2-img {
+    background-image: url("tomatoes.png");
+}
+
+.latest-blog3-img {
+    background-image: url("10-nguyen-tac-song-cua-dan-ong-tuoi-20-1-1.jpg");
+}
+
+.latest-blog4-img {
+    background-image: url("1_17626432_1387469917980235_8276771202755435774_n.jpg");
+}
+
+.latest-blog5-img {
+    background-image: url("1002912252-2048x1365.jpg");
+}
+
+.latest-blog6-img {
+    background-image: url("portrait-of-a-girl.jpg");
+}
+
+.blog-youth-category-link {
+    color: #55acee !important;
+}
+
+.blog-youth-category-link:hover {
+    color: #55acee !important;
+}
+
+.blog-sports-category-link {
+    color: #151515;
+}
+
+.blog-sports-category-link:hover {
+    color: #151515;
+}
+
+.blog-love-category-link {
+    color: #ec5569;
+}
+
+.blog-love-category-link:hover {
+    color: #ec5569;
+}
+
+.blog-footer {
+    background-color: #1e2022;
+    font-family: RobotoSlab-Light;
+    height: 8vh;
+    width: 100%;
 }
