@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Navbar Example</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="BEM_button.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+   <div class="container-fluid bg-light">
+      <div class="row">
+         <!-- A horizontal navbar that becomes vertical on small screens -->
+         <nav class="navbar navbar-expand-sm navbar-dark w-100">
+            <!-- Brand -->
+            <a href="#" class="nav-brand d-none d-md-block ml-5">
+               <img src="blog-logo.png" alt="" class="blog-logo">
+            </a>
+            <a href="#" class="nav-brand d-block d-md-none text-light p-0">
+               <img src="blog-logo-mini.png" alt="" class="blog-logo-mini">
+            </a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link text-light" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-light" href="#">Photography</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-light" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-light" href="#">About Me</a>
+                  </li>
+
+                  <form class="form-inline my-2 my-lg-0 ml-2 d-none d-lg-block">
+                     <div class="search-section d-flex">
+                        <div id="input-container" class="">
+                           <input type="text" class="text-white" placeholder="Search">
+                        </div>
+                        <button class="btn bg-transparent search-button">
+                           <i class="bi bi-search text-light search-btn-icon"></i>
+                        </button>
+                     </div>
+                  </form>
+               </ul>
+            </div>
+         </nav>
+      </div>
+      <!-- Body -->
+      <div class="row">
+         <div class="mt-5 blog-body container-fluid">
+            <div class="top-reading row d-flex flex-column align-items-center">
+               <h2 class="top-reading-header mb-5">Top Reading</h2>
+               <div class="container-fluid d-flex flex-column flex-md-row mb-5">
+                  <div class="col-md-8 custom-column" style="padding: 4px;">
+                     <div class="top1-reading">
+                        <div class="top-reading-effect-wrapper">
+                           <div class="top1-reading-background"></div>
+                        </div>
+                        <div class="top-reading-content top1-reading-content px-5 pt-4 pb-5">
+                           <div class="top-reading-heading-section d-flex justify-content-between align-items-center">
+                              <div class="top1-reading-category d-flex align-items-center">
+                                 <a href="#" class="top1-reading-category-link mr-2">
+                                    INTEGRATIVE HEALTH
+                                 </a>
+                                 <object data="integrative-health.svg" width="30px" height="30px"></object>
+                              </div>
+                              <div class="top1-reading-author">
+                                 <a href="#" class="top1-reading-author-link">
+                                    Do Quynh Anh
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="top-reading-body-section mt-4">
+                              <div class="top1-reading-headline">
+                                 <a href="#" class="top1-reading-headline-link">
+                                    These 10 Factors Affect Your Individual Response To Vitamin D
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 d-flex flex-column custom-column" style="padding: 4px;">
+                     <div class="top2-reading mb-2">
+                        <div class="top-reading-effect-wrapper">
+                           <div class="top2-reading-background"></div>
+                        </div>
+                        <div class="top-reading-content top2-reading-content px-4 pt-3 pb-4">
+                           <div class="top-reading-heading-section d-flex justify-content-between align-items-center">
+                              <div class="top2-reading-categrory d-flex align-items-center">
+                                 <a href="#" class="top2-reading-category-link mr-1">
+                                    ROUTINES
+                                 </a>
+                                 <object data="routines-icon.svg" width="20px" height="20px"></object>
+                              </div>
+                              <div class="top2-reading-author">
+                                 <a href="#" class="top2-reading-author-link">
+                                    Do Quynh Anh
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="top-reading-body-section mt-3">
+                              <div class="top2-reading-headline">
+                                 <a href="#" class="top2-reading-headline-link">
+                                    A quick upper body move that's sure to get your triceps burning
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="top3-reading">
+                        <div class="top-reading-effect-wrapper">
+                           <div class="top3-reading-background"></div>
+                        </div>
+                        <div class="top-reading-content top3-reading-content px-4 pt-3 pb-4">
+                           <div class="top-reading-heading-section d-flex justify-content-between align-items-center">
+                              <div class="top3-reading-categrory d-flex align-items-center">
+                                 <a href="#" class="top3-reading-category-link mr-1">
+                                    Travel
+                                 </a>
+                                 <object data="travel-icon.svg" width="20px" height="20px"></object>
+                              </div>
+                              <div class="top3-reading-author">
+                                 <a href="#" class="top3-reading-author-link">
+                                    Do Quynh Anh
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="top-reading-body-section mt-3">
+                              <div class="top3-reading-headline">
+                                 <a href="#" class="top3-reading-headline-link">
+                                    Why regenerative travel is the future of better tourism 
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row px-3">
+               <div class="col-md-9">
+
+               </div>
+               <div class="col-md-3 d-flex flex-column border">
+                  <div class="books-list d-flex flex-column justify-content-center">
+                     <h2 class="text-center book-section-heading mt-4">Books</h2>
+                     <div class="book book1 p-4 mx-auto mt-5">
+                        <div class="blog-category">
+                           <a href="#" class="blog-category-link">BOOK</a>
+                           <object data="book-icon.svg" width="20px" height="20px"></object>
+                        </div>
+                        <div class="book-title book1-title mt-2">
+                           <a href="" class="book-title-link book1-title-link">
+                              Murder by Numbers
+                           </a>
+                        </div>
+                        <div class="book-subinformation d-flex mb-4">
+                           <a href="https://www.meganmayfair.com" class="book-author book1-author mr-2">
+                              Megan Mayfair
+                           </a>
+                           <div class="book-rating book1-rating">
+                              <object data="star-rated.svg" width="10px" height="10px"></object>
+                              <object data="star-rated.svg" width="10px" height="10px"></object>
+                              <object data="star-rated.svg" width="10px" height="10px"></object>
+                              <object data="star-rated.svg" width="10px" height="10px"></object>
+                              <object data="star.svg" width="10px" height="10px"></object>
+                           </div>
+                        </div>
+                        <div class="book-display-area p-3 mt-5 rounded">
+                           <div class="book-img book1-img"></div>
+                        </div>
+
+                     </div>
+                     <div class="book book2 p-4 mx-auto mt-5">
+                        <div class="blog-category">
+                           <a href="#" class="blog-category-link">BOOK</a>
+                           <object data="book-icon.svg" width="20px" height="20px"></object>
+                        </div>
+                        <div class="book-title book2-title mt-2">
+                           <a href="" class="book-title-link book2-title-link">
+                              Stepping Beyond Intention
+                           </a>
+                        </div>
+                        <div class="book-subinformation d-flex mb-4">
+                           <a href="#" class="book-author book2-author mr-2">
+                              Daniel Mangena
+                           </a>
+                           <div class="book-rating book2-rating">
+                              <object data="star-rated.svg" width="10px" height="10px"></object>
+                              <object data="star-rated.svg" width="10px" height="10px"></object>
+                              <object data="star-rated.svg" width="10px" height="10px"></object>
+                              <object data="star-rated.svg" width="10px" height="10px"></object>
+                              <object data="star.svg" width="10px" height="10px"></object>
+                           </div>
+                        </div>
+                        <div class="book-display-area p-3 mt-5 rounded">
+                           <div class="book-img book2-img"></div>
+                        </div>
+
+                     </div>
+
+                     <div class="book book3 p-4 mx-auto mt-5">
+                        <div class="blog-category">
+                           <a href="#" class="blog-category-link">BOOK</a>
+                           <object data="book-icon.svg" width="20px" height="20px"></object>
+                        </div>
+                        <div class="book-title book3-title mt-2">
+                           <a href="" class="book-title-link book3-title-link">
+                              Verntropa
+                           </a>
+                        </div>
+                        <div class="book-subinformation d-flex mb-4">
+                           <a href="#" class="book-author book3-author mr-2">
+                              The Balance
+                           </a>
+                           <div class="book-rating book3-rating">
+                              <object data="star-rated.svg" width="10px" height="10px"></object>
+                              <object data="star-rated.svg" width="10px" height="10px"></object>
+                              <object data="star-rated.svg" width="10px" height="10px"></object>
+                              <object data="star.svg" width="10px" height="10px"></object>
+                              <object data="star.svg" width="10px" height="10px"></object>
+                           </div>
+                        </div>
+                        <div class="book-display-area p-3 mt-5 rounded">
+                           <div class="book-img book3-img"></div>
+                        </div>
+                     </div>
+                     <button class="all-book-reviews-btn mt-5 mx-auto mb-5">
+                        ALL BOOKS
+                     </button>
+                  </div>
+                  <div class="podcasts-list">
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="myblog.js"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
